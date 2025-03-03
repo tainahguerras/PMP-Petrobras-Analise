@@ -2,7 +2,7 @@ import re
 
 # Listas
 
-## lista com urls de compartilhamento público do Google Sheets
+## lista com urls de compartilhamento público do Google Sheets dos datasets utilizados no projeto
 urls = [
     'https://docs.google.com/spreadsheets/d/1R78gxRyUJsti8iOQT_VYUdqKj12kGWFXWqgmZk6Xuj0/edit?usp=sharing',
     'https://docs.google.com/spreadsheets/d/14zxZYPrRbb6FP7xJcgK52cT2HEjZx5g6rAPsY2n36wo/edit?usp=sharing',
@@ -17,7 +17,7 @@ colunas_selecionadas = ['Código', 'Identificador do indivíduo', 'Instituição
 
 # Funções
 
-## converte urls de compartilhamento do Google Sheets para serem lidas pelo pandas
+## converte urls de compartilhamento do Google Sheets em formato correto para serem lidas pelo Pandas
 def conversor_url(url):
    
     padrao = r'https://docs\.google\.com/spreadsheets/d/([a-zA-Z0-9-_]+)(/edit#gid=(\d+)|/edit.*)?'
