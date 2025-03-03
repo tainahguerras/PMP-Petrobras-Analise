@@ -1,6 +1,8 @@
 import re
 
-# Lista com urls de compartilhamento do Google Sheets
+# Listas
+
+## lista com urls de compartilhamento público do Google Sheets
 urls = [
     'https://docs.google.com/spreadsheets/d/1R78gxRyUJsti8iOQT_VYUdqKj12kGWFXWqgmZk6Xuj0/edit?usp=sharing',
     'https://docs.google.com/spreadsheets/d/14zxZYPrRbb6FP7xJcgK52cT2HEjZx5g6rAPsY2n36wo/edit?usp=sharing',
@@ -10,10 +12,12 @@ urls = [
     'https://docs.google.com/spreadsheets/d/1-DAMcsRODfJgQF4HJPT_kVKYxS3Tamd9Fuxzo2wrslo/edit?usp=sharing'
 ]
 
-# Lista com nomes dos dataframes
-nomes_dataframes = ['BC_ES', 'BS_SC_PR', 'BS_SP', 'BS_RJ', 'RN_CE', 'SE_AL']
+## lista de colunas previamente selecionadas para análise exploratória
+colunas_selecionadas = ['Código', 'Identificador do indivíduo', 'Instituição executora', 'Estado', 'Cidade', 'Praia', 'Trecho', 'Estratégia do trecho', 'Condição do céu inicial', 'Condição do mar inicial', 'Maré inicial', 'Vento inicial', 'Tipo do monitoramento', 'Data/Hora', 'Ponto - Lat', 'Ponto - Long', 'Espécies - Classe', 'Espécies - Ordem', 'Espécies - Subordem', 'Espécies - Família', 'Espécies - Gênero', 'Espécies - Espécie', 'Espécie ameaçada', 'Caracterização do ambiente', 'Condição']
 
-# Converte urls de compartilhamento do Google Sheets para serem lidas pelo pandas
+# Funções
+
+## converte urls de compartilhamento do Google Sheets para serem lidas pelo pandas
 def conversor_url(url):
    
     padrao = r'https://docs\.google\.com/spreadsheets/d/([a-zA-Z0-9-_]+)(/edit#gid=(\d+)|/edit.*)?'
@@ -22,9 +26,9 @@ def conversor_url(url):
 
     return nova_url
 
-# Calcula a porcentagem de valores nulos de uma coluna em um dataframe
+## calcula a porcentagem de valores nulos de uma coluna em um dataframe
 def calcular_porcentagem_nulos(df, nome, coluna):
     total_linhas = len(df)
-    total_nulos = df[coluna].isnan().sum()
+    total_nulos = df[coluna].isnull().sum()
     porcentagem_nulos = (total_nulos / total_linhas) * 100
     print(f"{nome}: {porcentagem_nulos:.2f}% de valores ausentes")
