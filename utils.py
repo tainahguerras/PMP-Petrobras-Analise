@@ -28,7 +28,6 @@ def conversor_url(url):
 
 ## calcula a porcentagem de valores nulos de uma coluna em um dataframe
 def calcular_porcentagem_nulos(df, nome, coluna):
-    total_linhas = len(df)
     total_nulos = df[coluna].isnull().sum()
-    porcentagem_nulos = (total_nulos / total_linhas) * 100
+    porcentagem_nulos = (total_nulos / len(df)) * 100
     print(f"{nome}: {porcentagem_nulos:.2f}% de valores ausentes")
