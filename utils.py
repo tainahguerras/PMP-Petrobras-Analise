@@ -4,12 +4,12 @@ import re
 
 ## lista com urls de compartilhamento público do Google Sheets dos datasets utilizados no projeto
 urls = [
-    'https://docs.google.com/spreadsheets/d/1R78gxRyUJsti8iOQT_VYUdqKj12kGWFXWqgmZk6Xuj0/edit?usp=sharing',
-    'https://docs.google.com/spreadsheets/d/14zxZYPrRbb6FP7xJcgK52cT2HEjZx5g6rAPsY2n36wo/edit?usp=sharing',
-    'https://docs.google.com/spreadsheets/d/15P7w_jzUVY18t0-gDz5cmHpY7Xf-5pMo8BTh3QZwjVU/edit?usp=sharing',
-    'https://docs.google.com/spreadsheets/d/1DeuecMTI8ySMd5xN-5HEtB3N8wOVaoZl3ARnLLUMwFQ/edit?usp=sharing',
-    'https://docs.google.com/spreadsheets/d/1bIJSCOSpXaewZiqFlPAExoRpu3jHevQk32n8ws8Q8vE/edit?usp=sharing',
-    'https://docs.google.com/spreadsheets/d/1-DAMcsRODfJgQF4HJPT_kVKYxS3Tamd9Fuxzo2wrslo/edit?usp=sharing'
+    'https://docs.google.com/spreadsheets/d/1EHm8Mz1Q6x4LG_3nN0EkXQgNCBFagWTrDmsl4qxqBRI/edit?usp=sharing',
+    'https://docs.google.com/spreadsheets/d/131TJcc4uMB148_PNGfsDCvT-w3unLBNdMIQBtWoYM-E/edit?usp=sharing',
+    'https://docs.google.com/spreadsheets/d/17nFHmie9GRr2n7TbZynW_a-fBiu13PoGGeYuXfwQfcM/edit?usp=sharing',
+    'https://docs.google.com/spreadsheets/d/1DGOvV0OJF6XNbK-BZG91v3WFw3_K2mjKZGmnsk0Xs1I/edit?usp=sharing',
+    'https://docs.google.com/spreadsheets/d/1XR8esB6C7quAOiF1jSfygIh_YwbwGLSL0FE1LZ_UAII/edit?usp=sharing',
+    'https://docs.google.com/spreadsheets/d/1tJv5OOb_QSpcl15ij516pyX5KuL-gReCNV6KfujuIpg/edit?usp=sharing'
 ]
 
 ## lista de colunas previamente selecionadas para análise exploratória
