@@ -14,7 +14,7 @@ Este projeto visa a criação de um dashboard que explora os dados coletados ent
 Os Projetos de Monitoramento de Praias (PMPs) são iniciativas conduzidas por diferentes instituições para acompanhar a fauna costeira e marinha ao longo do litoral brasileiro. Esses projetos são empreendidos pela Petrobras e licenciados pelo IBAMA, como parte das condicionantes ambientais para a exploração e produção de petróleo e gás. O monitoramento registra a ocorrência de animais permitindo a avaliação de impactos ambientais, padrões de encalhe e possíveis ameaças às espécies.
 
 ## Sobre os Dados
-Os arquivos em CSV foram obtidos do Sistema de Informação de Monitoramento da Biota Aquática ([SIMBA](https://simba.petrobras.com.br/simba/web/)), utilizando filtro de datas de 01/01/2020 a 31/12/2024. Após o download, os arquivos foram hospedados em Google Drive com compartilhamento público (links disponíveis em [utils.py](https://github.com/tainahguerras/PMP-Petrobras-Analise/blob/main/utils.py). 
+Os arquivos em CSV foram obtidos do Sistema de Informação de Monitoramento da Biota Aquática ([SIMBA](https://simba.petrobras.com.br/simba/web/)), utilizando filtro de datas de 01/01/2020 a 31/12/2024. Após o download, os arquivos foram hospedados em Google Drive com compartilhamento público (links disponíveis em [utils.py](https://github.com/tainahguerras/PMP-Petrobras-Analise/blob/main/utils.py)). 
 
 ## Guia do Projeto
 ### 1. [Tratamento dos dados](https://github.com/tainahguerras/PMP-Petrobras-Analise/blob/main/tratamento.ipynb)
