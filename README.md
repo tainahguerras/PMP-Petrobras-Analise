@@ -19,5 +19,5 @@ Os arquivos em CSV foram obtidos do Sistema de Informação de Monitoramento da 
 ## Guia do Projeto
 ### 1. [Tratamento dos dados](https://github.com/tainahguerras/PMP-Petrobras-Analise/blob/main/tratamento.ipynb)
 ### 2. [Dataset tratado](https://github.com/tainahguerras/PMP-Petrobras-Analise/blob/main/dataset_tratado/PMP_dados.csv)
-### 3. Dashboard
+### 3. [Dashboard](https://github.com/tainahguerras/PMP-Petrobras-Analise/blob/main/dashboard_PMP.pbix)
 
