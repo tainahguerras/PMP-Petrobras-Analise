@@ -2,7 +2,7 @@
 
 # Análise de Registros da Fauna Marinha e Costeira - BR (2020 - 2024)
 
-### Clique [aqui](https://app.powerbi.com/view?r=eyJrIjoiMmU0ZTIxM2EtZGZjMS00OThmLWIzOGYtMmZjMWU1MTU3ZGY1IiwidCI6ImUyZjc3ZDAwLTAxNjMtNGNmNi05MmIwLTQ4NGJhZmY5ZGY3ZCJ9&pageName=4e9dd4cbb9537688e7ea) para acessar o dashboard final pelo navegador!
+### Clique [aqui](https://app.powerbi.com/view?r=eyJrIjoiMmU0ZTIxM2EtZGZjMS00OThmLWIzOGYtMmZjMWU1MTU3ZGY1IiwidCI6ImUyZjc3ZDAwLTAxNjMtNGNmNi05MmIwLTQ4NGJhZmY5ZGY3ZCJ9&pageName=4e9dd4cbb9537688e7ea) para acessar o dashboard final pelo seu navegador!
 
 Este projeto visa a criação de um dashboard que explora os dados coletados entre 2020 e 2024 pelos Projetos de Monitoramento de Praias, trazendo insights sobre:
 * O volume total de registros e sua distribuição ao longo do tempo
