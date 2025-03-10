@@ -17,17 +17,35 @@ colunas_selecionadas = ['Código', 'Identificador do indivíduo', 'Instituição
 
 # Funções
 
-## converte urls de compartilhamento do Google Sheets em formato correto para serem lidas pelo Pandas
 def conversor_url(url):
-   
+    """
+    Converte uma URL de compartilhamento do Google Sheets para um link compatível com `pandas.read_csv()`.
+    A URL resultante pode ser utilizada diretamente para leitura do arquivo como um CSV.
+
+    Args:
+        url (str): Link de compartilhamento público do Google Sheets.
+
+    Returns:
+        str: URL formatada para exportação em CSV.
+    """
     padrao = r'https://docs\.google\.com/spreadsheets/d/([a-zA-Z0-9-_]+)(/edit#gid=(\d+)|/edit.*)?'
     substituicao = lambda m: f'https://docs.google.com/spreadsheets/d/{m.group(1)}/export?' + (f'gid={m.group(3)}&' if m.group(3) else '') + 'format=csv'
     nova_url = re.sub(padrao, substituicao, url)
 
     return nova_url
 
-## calcula a porcentagem de valores nulos de uma coluna em um dataframe
 def calcular_porcentagem_nulos(df, nome, coluna):
+    """
+    Calcula e imprime a porcentagem de valores ausentes em uma coluna de um DataFrame.
+
+    Args:
+        df (pd.DataFrame): DataFrame contendo os dados.
+        nome (str): Nome do conjunto de dados (para referência na saída).
+        coluna (str): Nome da coluna na qual será calculada a porcentagem de valores nulos.
+
+    Returns:
+        None: Apenas exibe a porcentagem de valores ausentes.
+    """
     total_nulos = df[coluna].isnull().sum()
     porcentagem_nulos = (total_nulos / len(df)) * 100
     print(f"{nome}: {porcentagem_nulos:.2f}% de valores ausentes")
