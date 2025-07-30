@@ -13,7 +13,11 @@ urls = [
 ]
 
 ## lista de colunas previamente selecionadas para análise exploratória
-colunas_selecionadas = ['Código', 'Identificador do indivíduo', 'Instituição executora', 'Estado', 'Cidade', 'Praia', 'Trecho', 'Estratégia do trecho', 'Maré inicial', 'Vento inicial', 'Tipo do monitoramento', 'Data/Hora', 'Ponto - Lat', 'Ponto - Long', 'Espécies - Classe', 'Espécies - Ordem', 'Espécies - Subordem', 'Espécies - Família', 'Espécies - Gênero', 'Espécies - Espécie', 'Espécie ameaçada', 'Caracterização do ambiente', 'Condição']
+colunas_selecionadas = ['Código', 'Identificador do indivíduo', 'Instituição executora', 'Estado', 'Cidade', 'Praia', 'Trecho', 
+                        'Estratégia do trecho', 'Maré inicial', 'Vento inicial', 'Tipo do monitoramento', 'Data/Hora', 'Ponto - Lat', 
+                        'Ponto - Long', 'Espécies - Classe', 'Espécies - Ordem', 'Espécies - Subordem', 'Espécies - Família', 
+                        'Espécies - Gênero', 'Espécies - Espécie', 'Espécie ameaçada', 'Caracterização do ambiente', 'Condição', 
+                        'Presença de óleo', 'Quantidade de óleo', 'Estágio de desenvolvimento', 'Interações antrópicas']
 
 # Funções
 
